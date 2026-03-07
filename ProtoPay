@@ -1,0 +1,231 @@
+index.html (Main Website Page)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ProtoPay | Micro Payment Platform</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1 class="logo">ProtoPay</h1>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Login</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h2>Secure Micro Payments for Digital Content</h2>
+
+<p>
+Pay small amounts securely while keeping your identity private.
+Built with blockchain and confidential computing.
+</p>
+
+<button onclick="buyAccess()">Buy Access</button>
+
+</section>
+
+
+<section class="features">
+
+<div class="card">
+
+<h3>Privacy</h3>
+
+<p>
+User transactions remain private using confidential computing.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Fast Payments</h3>
+
+<p>
+Instant micro transactions for digital content.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Secure Blockchain</h3>
+
+<p>
+All payments verified through smart contracts.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="payment">
+
+<h2>Make Payment</h2>
+
+<input type="text" id="amount" placeholder="Enter Amount">
+
+<button onclick="processPayment()">
+Pay Now
+</button>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 ProtoPay Platform</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+style.css (Professional UI)
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f5f7fb;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(120deg,#3a7bd5,#00d2ff);
+color:white;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:white;
+color:black;
+cursor:pointer;
+margin-top:20px;
+border-radius:6px;
+}
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+width:250px;
+text-align:center;
+}
+
+.payment{
+text-align:center;
+padding:60px;
+}
+
+.payment input{
+padding:10px;
+width:200px;
+margin-right:10px;
+}
+
+.payment button{
+padding:10px 20px;
+background:#3a7bd5;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+
+
+script.js (Payment Prototype)
+
+
+
+function buyAccess(){
+
+alert("Redirecting to payment gateway...");
+
+}
+
+
+
+function processPayment(){
+
+let amount = document.getElementById("amount").value;
+
+if(amount == ""){
+alert("Enter amount");
+return;
+}
+
+alert("Payment of $" + amount + " processed successfully");
+
+}
